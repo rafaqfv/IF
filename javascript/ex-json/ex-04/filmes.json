@@ -1,0 +1,40 @@
+{
+    "filmes": [
+       {
+          "título": "Matrix",
+          "diretor": "Lana Wachowski e Lilly Wachowski",
+          "gênero": "Ficção Científica",
+          "ano": 1999,
+          "avaliações": [4.5, 5.0, 4.2, 4.8, 4.9]
+       },
+       {
+          "título": "O Senhor dos Anéis: A Sociedade do Anel",
+          "diretor": "Peter Jackson",
+          "gênero": "Fantasia",
+          "ano": 2001,
+          "avaliações": [4.8, 4.7, 4.9, 4.4, 4.6]
+       },
+       {
+          "título": "Interestelar",
+          "diretor": "Christopher Nolan",
+          "gênero": "Ficção Científica",
+          "ano": 2014,
+          "avaliações": [4.9, 4.3, 4.7, 4.5, 4.1]
+       },
+       {
+          "título": "Jurassic Park",
+          "diretor": "Steven Spielberg",
+          "gênero": "Aventura",
+          "ano": 1993,
+          "avaliações": [4.2, 4.6, 4.5, 4.0, 4.3]
+       },
+       {
+          "título": "Star Wars: Episódio IV - Uma Nova Esperança",
+          "diretor": "George Lucas",
+          "gênero": "Ficção Científica",
+          "ano": 1977,
+          "avaliações": [4.7, 4.8, 4.4, 4.2, 4.6]
+       }
+    ]
+ }
+ 
