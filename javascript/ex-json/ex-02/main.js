@@ -1,4 +1,5 @@
-let alunos = [
+
+const alunos = [
   {
     nome: "João",
     idade: 18,
@@ -25,39 +26,70 @@ let alunos = [
     notas: [8.0, 7.5, 8.9],
   },
 ];
+const fs = require('fs');
 
-alunos[5] = {
-  nome: "Rafael",
-  idade: 17,
-  notas: [9, 9.5, 10],
-};
+// const filePath = './alunos.json';
+// const fileEncoding = 'utf-8';
+// let objALUNO = [];
 
-// Ver quantas notas tem os alunos
-// console.log(alunos[0].notas.length);
+// function EscreverJSON() {
+//   const stringfando = JSON.stringify(objALUNO, null, 2);
+//   fs.writeFileSync(filePath, stringfando, fileEncoding);
+// }
 
+// function lerJSON() {
+//   return fs.readFileSync(filePath, fileEncoding);
+// }
 
-var totalNotas = 0;
-var qtNotas = 0;
-
-for (var i = 0; i < alunos.length; i++) {
-    for (var j = 0; j < alunos[i].notas.length; j++) {
-        totalNotas += alunos[i].notas[j];
-        qtNotas++;
-    }
+function LerJSON(){
+  const lido = fs.readFileSync('alunos.json', (alunos, null, 2), 'utf-8');
+  return lido;
 }
 
-var media = totalNotas / qtNotas;
-
-console.log('Média das notas: ',media.toFixed(2));
-
-console.log(alunos);
-
-var velho = alunos[0];
-
-for (let i = 1; i < alunos.length; i++) {
-    if (alunos[i].idade > velho.idade) {
-        velho = alunos[i];
-    }
+function EscreverJSON() {
+  fs.writeFileSync('./alunos.json', JSON.stringify(alunos, null, 2), 'utf-8');
 }
 
-console.log(velho);
+let objALUNO = [];
+
+function addAluno(aluno) {
+  objALUNO.push(aluno);
+}
+
+  // Função para calcular a média das notas
+function mediaNotas() {
+    let soma = 0;
+    for (let i = 0; i < objALUNO.length; i++) {
+      for (let j = 0; j < 3; j++) {
+        soma += objALUNO[i].notas[j];
+      }
+    }
+    const arrayLength = objALUNO.length;
+    const media = soma / (arrayLength * 3);
+    return Number(media.toFixed(2));
+}
+
+  // Função para encontrar o aluno mais velho
+function alunoVelho() {
+    let maisVelho = objALUNO[0];
+    for (let i = 1; i < objALUNO.length; i++) {
+      if (objALUNO[i].idade > maisVelho.idade) {
+        maisVelho = objALUNO[i];
+      }
+    }
+    return maisVelho;
+}
+
+try {
+  // Escrevendo, lendo e armazenando em uma variável como JSON e depois OBJETO
+  EscreverJSON();
+  const alunosJS = LerJSON();
+  objALUNO = JSON.parse(alunosJS);
+
+  // Exibindo resultados
+  console.log(`Média de nota dos alunos: ${mediaNotas()}.`);
+  console.log(`O aluno mais velho é ${alunoVelho().nome} com ${alunoVelho().idade} anos.`);
+  
+} catch (error) {
+  console.error(error);
+}

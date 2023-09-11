@@ -1,40 +1,72 @@
-{
-    "filmes": [
-       {
-          "título": "Matrix",
-          "diretor": "Lana Wachowski e Lilly Wachowski",
-          "gênero": "Ficção Científica",
-          "ano": 1999,
-          "avaliações": [4.5, 5.0, 4.2, 4.8, 4.9]
-       },
-       {
-          "título": "O Senhor dos Anéis: A Sociedade do Anel",
-          "diretor": "Peter Jackson",
-          "gênero": "Fantasia",
-          "ano": 2001,
-          "avaliações": [4.8, 4.7, 4.9, 4.4, 4.6]
-       },
-       {
-          "título": "Interestelar",
-          "diretor": "Christopher Nolan",
-          "gênero": "Ficção Científica",
-          "ano": 2014,
-          "avaliações": [4.9, 4.3, 4.7, 4.5, 4.1]
-       },
-       {
-          "título": "Jurassic Park",
-          "diretor": "Steven Spielberg",
-          "gênero": "Aventura",
-          "ano": 1993,
-          "avaliações": [4.2, 4.6, 4.5, 4.0, 4.3]
-       },
-       {
-          "título": "Star Wars: Episódio IV - Uma Nova Esperança",
-          "diretor": "George Lucas",
-          "gênero": "Ficção Científica",
-          "ano": 1977,
-          "avaliações": [4.7, 4.8, 4.4, 4.2, 4.6]
-       }
-    ]
- }
- 
+[
+   {
+      "titulo": "O Poderoso Chefão",
+      "diretor": "Francis Ford Coppola",
+      "genero": "Drama",
+      "ano": 1972,
+      "avaliacoes": [9.2, 9.5, 8.9]
+   },
+   {
+      "titulo": "Interestelar",
+      "diretor": "Christopher Nolan",
+      "genero": "Ficção Científica",
+      "ano": 2014,
+      "avaliacoes": [8.9, 9.0, 8.7]
+   },
+   {
+      "titulo": "A Origem",
+      "diretor": "Christopher Nolan",
+      "genero": "Ficção Científica",
+      "ano": 2010,
+      "avaliacoes": [8.8, 8.5, 8.9]
+   },
+   {
+      "titulo": "Forrest Gump",
+      "diretor": "Robert Zemeckis",
+      "genero": "Drama",
+      "ano": 1994,
+      "avaliacoes": [8.7, 9.1, 8.5]
+   },
+   {
+      "titulo": "Titanic",
+      "diretor": "James Cameron",
+      "genero": "Drama",
+      "ano": 1997,
+      "avaliacoes": [8.8, 8.7, 8.4]
+   },
+   {
+      "titulo": "Pulp Fiction",
+      "diretor": "Quentin Tarantino",
+      "genero": "Crime",
+      "ano": 1994,
+      "avaliacoes": [8.9, 9.0, 8.8]
+   },
+   {
+      "titulo": "Clube da Luta",
+      "diretor": "David Fincher",
+      "genero": "Drama",
+      "ano": 1999,
+      "avaliacoes": [8.8, 8.7, 8.5]
+   },
+   {
+      "titulo": "Avatar",
+      "diretor": "James Cameron",
+      "genero": "Ficção Científica",
+      "ano": 2009,
+      "avaliacoes": [7.8, 8.1, 7.6]
+   },
+   {
+      "titulo": "Matrix",
+      "diretor": "The Wachowskis",
+      "genero": "Ficção Científica",
+      "ano": 1999,
+      "avaliacoes": [8.7, 8.9, 8.4]
+   },
+   {
+      "titulo": "O Resgate do Soldado Ryan",
+      "diretor": "Steven Spielberg",
+      "genero": "Guerra",
+      "ano": 1998,
+      "avaliacoes": [8.6, 8.8, 8.9]
+   }
+]

@@ -1,0 +1,17 @@
+[
+    {
+      "nome": "Produto 1",
+      "preco": 19.99,
+      "estoque": 50
+    },
+    {
+      "nome": "Produto 2",
+      "preco": 29.99,
+      "estoque": 30
+    },
+    {
+      "nome": "Produto 3",
+      "preco": 9.99,
+      "estoque": 100
+    }
+  ]
