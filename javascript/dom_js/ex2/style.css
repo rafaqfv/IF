@@ -1,0 +1,66 @@
+/* Estilos para melhorar a aparência da calculadora */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.destacado {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+ul, li {
+    list-style: none;
+}
+
+.calculator {
+    margin: 0 auto;
+    width: 400px; /* Aumentei o tamanho do contêiner principal */
+    padding: 30px; /* Aumentei o padding */
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #333;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+p {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+}
+
+#result {
+    font-size: 24px;
+    color: #007bff;
+    font-weight: bold;
+}
