@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: azure;
+    min-height: 100vh;
+    transition: .5s;
+}
+
+.fundo {
+    width: 250px;
+    height: 150px;
+    background-color: black;
+    border-radius: 150px;
+    position: relative;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.botao  {
+    width: 150px;
+    height: 150px;
+    background-color: gold;
+    border-radius: 50%;
+    transform: scale(.9);
+    transition: .5s;
+    position: absolute;
+    left: 0;
+}
+
+.fundo.toggle .botao {
+    left: 100px;
+    background-color: azure;
+}
+
+.fundo.toggle {
+    background-color: rgb(26, 5, 49);
+}
+
+body.toggle {
+    background-color: black;
+}

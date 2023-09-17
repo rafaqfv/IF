@@ -14,15 +14,22 @@
 
 const btDestacar = document.querySelector('#destacarItens');
 const btRemover = document.querySelector('#removerDestaque');
-const li = document.querySelector('ul');
+const li = document.querySelectorAll('li');
+console.log(li);
 
 function destacar() {
-    li.classList.add('destacado');
+    for (let i = 0; i < li.length; i++) {
+        li[i].classList.add('destacado');
+    }
 }
+        
         
 
 function remover() {
-    li.classList.remove('destacado');
+    for (let i = 0; i < li.length; i++) {
+        li[i].classList.remove('destacado');
+        li[i].classList.add('outransition');
+    }
 }
 
 btDestacar.addEventListener('click', destacar);
