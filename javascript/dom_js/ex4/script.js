@@ -26,7 +26,7 @@ const showWeatherData = async (city) => {
 
         console.log(data);
 
-        if (data.weather[0].description === 'nublado' || data.weather[0].description === 'algumas nuvens') {
+        if (data.weather[0].description === 'nublado' || data.weather[0].description === 'algumas nuvens' || data.weather[0].description === 'chuva moderada') {
             document.querySelector('#weather-icon').setAttribute('src', './images/cloud.png');
         } else if (data.weather[0].description === 'chuva' || data.weather[0].description === 'chuva leve') {
             document.querySelector('#weather-icon').setAttribute('src', './images/rain.png');
