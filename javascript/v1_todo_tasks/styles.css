@@ -1,0 +1,63 @@
+/* Adicione algum estilo conforme necessário */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    min-height: 97vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h1 {
+    color: #333;
+}
+
+#app {
+    width: 400px;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    height: 350px;
+}
+
+ul {
+    scrollbar-width: 0px;
+    list-style-type: none;
+    padding: 0;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: 0px;
+    height: 230px;
+}
+
+ul::-webkit-scrollbar {
+    width: 0px;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    background-color: #fff;
+}
+
+button {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+span.remove {
+    text-decoration: overline;
+}
