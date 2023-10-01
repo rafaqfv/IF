@@ -1,0 +1,142 @@
+/* Reset de estilos e configuração da fonte padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Definição de variáveis de cor */
+:root {
+    --corUm: #010FDC;
+    --corDois: #0C8EE8;
+    --corTres: #750CE8;
+    --corQuatro: #0C58F2;
+    --corCinza: rgba(240, 255, 255, 0.507);
+    --corFundo: rgba(255, 0, 0, 0.11);
+    --corTexto: azure;
+    --corLi: rgba(255, 0, 0, 0.164);
+}
+
+/* Estilos do corpo da página */
+body {
+    min-height: 100vh;
+    background-color: var(--corUm);
+    background: url(img/wallpaperflare.com_wallpaper\ \(7\).jpg);
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos do título principal */
+h1 {
+    text-align: center;
+    color: var(--corTexto);
+}
+
+/* Estilos do contêiner principal */
+#container {
+    border: solid rgba(240, 255, 255, 0.404) 1px;
+    box-shadow: rgba(240, 255, 255, 0.404) 0 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    backdrop-filter: blur(15px);
+    width: 600px;
+    max-width: 600px;
+    height: 500px;
+    border-radius: 15px;
+}
+
+/* Estilos do campo de entrada de texto */
+input {
+    width: 300px;
+    max-width: 300px;
+    padding: .6em;
+    margin: auto;
+    background-color: transparent;
+    border: none;
+    color: var(--corTexto);
+    border-bottom: var(--corTexto) solid 1px;
+    outline: none;
+}
+
+input:focus {
+    color: var(--corTexto);
+}
+
+input::placeholder {
+    color: var(--corCinza);
+}
+
+/* Estilos dos botões Adicionar e Limpar */
+#add,
+#limpar {
+    width: 100px;
+    padding: .7em;
+    margin: 1em .5em;
+    color: var(--corTexto);
+    font-weight: bold;
+    /* background-color: var(--corQuatro); */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+
+/* Estilos da lista de convidados */
+.convidados {
+    width: 450px;
+    max-width: 450px;
+    height: 350px;
+    max-height: 350px;
+    overflow-y: auto;
+    /* background-color: var(--corFundo); */
+    border-radius: 10px;
+}
+
+.convidados::-webkit-scrollbar {
+    display: none;
+}
+
+/* Estilos dos itens da lista de convidados */
+li {
+    list-style-type: none;
+    color: var(--corTexto);
+    border-radius: 5px;
+    margin: .5em;
+    background-color: var(--corLi);
+    padding: .5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+    /* box-shadow: var(--corLi) 0 0 2px 0; */
+}
+
+/* Estilos dos itens marcados como riscados */
+li.risk {
+    text-decoration: line-through;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Estilos dos botões de remover */
+button {
+    background-color: var(--corTexto);
+    border: none;
+    padding: .5em;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+}
