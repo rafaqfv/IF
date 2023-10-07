@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(https://images.unsplash.com/photo-1542378151504-0361b8ec8f93?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    width: 600px;
+    max-width: 600px;
+    height: 500px;
+    max-height: 500px;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: azure;
+    margin-top: .5em;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: .8em;
+}
+
+#inputValue {
+    height: 35px;
+    padding: .2em;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 1px azure;
+    outline: none;
+    color: azure;
+}
+
+.botoes input[type=button] {
+    width: 90px;
+    height: 40px;
+    margin: 0 .5em;
+    color: azure;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.convidados {
+    margin: 1em 2em;
+    max-height: 350px;
+    overflow-y: auto;
+}
+
+.convidados::-webkit-scrollbar {
+    display: none;
+}
+
+li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: .5em;
+    padding: 1em;
+    background-color: rgb(220, 169, 87);
+    list-style-type: none;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+li.risk {
+    background-color: rgba(220, 169, 87, 0.462);
+}
+
+li span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+li span::-webkit-scrollbar {
+    display: none;
+}
+
+li span input,
+li button {
+    cursor: pointer;
+}
+
+li button:hover {
+    background-color: rgba(240, 255, 255, 0.858);
+}
+
+li button {
+    padding: .5em;
+    background-color: azure;
+    border: none;
+    border-radius: 3px;
+    opacity: 100% !important;
+}
+
+li span p {
+    margin-left: .5em;
+    color: azure;
+    max-width: 350px;
+    overflow: auto;
+}
+
+span p::-webkit-scrollbar {
+    display: none;
+}
+
+p.risk {
+    text-decoration: line-through;
+    opacity: 50%;
+}
