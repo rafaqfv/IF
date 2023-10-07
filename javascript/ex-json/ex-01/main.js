@@ -25,7 +25,6 @@ const livros = [
   },
 ];
 
-const { log } = require("console");
 const fs = require("fs");
 
 fs.writeFile('livros.json', JSON.stringify(livros, null, 2), 'utf-8', (error, result) => {

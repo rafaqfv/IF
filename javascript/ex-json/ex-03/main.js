@@ -33,8 +33,7 @@ try {
 
   let maisqt = estoque();
 
-  console.log(`Array de produtos lido com sucesso.
-  `);
+  console.log('Array de produtos lido com sucesso.');
   console.log(`Produto com mais estoque: ${maisqt.nome}
   `);
   console.log(

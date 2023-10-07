@@ -28,19 +28,6 @@ const alunos = [
 ];
 const fs = require('fs');
 
-// const filePath = './alunos.json';
-// const fileEncoding = 'utf-8';
-// let objALUNO = [];
-
-// function EscreverJSON() {
-//   const stringfando = JSON.stringify(objALUNO, null, 2);
-//   fs.writeFileSync(filePath, stringfando, fileEncoding);
-// }
-
-// function lerJSON() {
-//   return fs.readFileSync(filePath, fileEncoding);
-// }
-
 function LerJSON(){
   const lido = fs.readFileSync('alunos.json', (alunos, null, 2), 'utf-8');
   return lido;

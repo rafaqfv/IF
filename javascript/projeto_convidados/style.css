@@ -22,7 +22,7 @@
 body {
     min-height: 100vh;
     background-color: var(--corUm);
-    background: url(img/wallpaperflare.com_wallpaper\ \(7\).jpg);
+    background: url(https://images.unsplash.com/photo-1675516773116-d60902b982e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80);
     background-position: center center;
     background-size: cover;
     display: flex;
@@ -40,7 +40,7 @@ h1 {
 /* Estilos do contêiner principal */
 #container {
     border: solid rgba(240, 255, 255, 0.404) 1px;
-    box-shadow: rgba(240, 255, 255, 0.404) 0 0 20px 0;
+    /* box-shadow: rgba(240, 255, 255, 0.404) 0 0 20px 0; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -54,7 +54,7 @@ h1 {
 }
 
 /* Estilos do campo de entrada de texto */
-input {
+#input {
     width: 300px;
     max-width: 300px;
     padding: .6em;
@@ -105,30 +105,53 @@ input::placeholder {
     display: none;
 }
 
-/* Estilos dos itens da lista de convidados */
-li {
+ul {
     list-style-type: none;
-    color: var(--corTexto);
+    padding: 0;
+}
+
+ul li {
+    background-color: #f9f9f9;
+    margin-bottom: 5px;
+    padding: 1em;
     border-radius: 5px;
-    margin: .5em;
-    background-color: var(--corLi);
-    padding: .5em;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    text-transform: capitalize;
-    /* box-shadow: var(--corLi) 0 0 2px 0; */
 }
 
-/* Estilos dos itens marcados como riscados */
-li.risk {
-    text-decoration: line-through;
+ul li button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.flex {
+ul li button:hover {
+    background-color: #d32f2f;
+}
+
+li span {
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
+    align-items: center;
+    max-width: 300px;
+    padding: .7em;
+    overflow-x: auto;
+}
+
+span p {
+    margin-left: 1em;
+    text-transform: capitalize;
+}
+
+span input[type=checkbox] {
+    cursor: pointer;
+}
+
+.risk {
+    text-decoration: line-through;
 }
 
 /* Estilos dos botões de remover */
