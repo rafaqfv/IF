@@ -20,7 +20,7 @@ function addConvidado() {
         const p = document.createElement('p');
         p.textContent = text;
         const bt = document.createElement('button');
-        bt.textContent = 'Remover';
+        bt.textContent = 'X';
 
         // Manipulando o DOM e AppendChild
         span.appendChild(check);
@@ -41,6 +41,7 @@ function addConvidado() {
         // Limpando o input e focando nele
         inputValue.value = '';
         inputValue.focus();
+
     } else {
         h1.textContent = 'Inválido';
     }
@@ -58,7 +59,6 @@ function enter(e) {
         addConvidado();
     }
 }
-
 add.addEventListener('click', addConvidado);
 btLimpar.addEventListener('click', limpar);
 inputValue.addEventListener('keydown', enter)

@@ -64,6 +64,7 @@ h1 {
 .convidados {
     margin: 1em 2em;
     max-height: 350px;
+    height: 350px;
     overflow-y: auto;
 }
 
@@ -108,7 +109,9 @@ li button:hover {
 
 li button {
     padding: .5em;
-    background-color: azure;
+    background-color: red;
+    color: #FFFFFF;
+    font-weight: bolder;
     border: none;
     border-radius: 3px;
     opacity: 100% !important;
